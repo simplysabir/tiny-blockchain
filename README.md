@@ -1,4 +1,4 @@
-# Tiny Blockchain
+# **Tiny Blockchain**
 
 Tiny Blockchain is a simple blockchain implementation written in Rust. It provides a basic framework for creating and managing a blockchain, complete with transactions, proof-of-work mining, and adjustable parameters such as difficulty and mining rewards.
 
@@ -14,8 +14,8 @@ Tiny Blockchain is a simple blockchain implementation written in Rust. It provid
 
 1. **Clone the Repository:**
 ```
-git clone https://github.com/your-username/tiny_blockchain.git
-cd tiny_blockchain
+git clone https://github.com/simplysabir/tiny-blockchain.git
+cd tiny-blockchain
 ```
 
 2. **Build the Project:**
