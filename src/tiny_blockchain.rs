@@ -6,6 +6,7 @@ extern crate sha2;
 use serde_derive::{Deserialize, Serialize};
 use sha2::{Sha256, Digest};
 use std::fmt::write;
+use chrono::prelude::*;
 
 #[derive(Debug, Clone, Serialize)]
 struct Transaction {
@@ -81,11 +82,12 @@ impl Chain {
 
     pub fn generate_new_block(&mut self) -> bool {
         let header = Blockheader {
-            timestamp: time::now().to_timespec().sec,
+            timestamp: Utc::now().timestamp(),
             nonce: 0,
             pre_hash: self.last_hash(),
             merkle: String::new(),
             difficulty: self.difficulty,
         };
+        true
     }
 }
